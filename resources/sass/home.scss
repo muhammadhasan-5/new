@@ -1,0 +1,55 @@
+@import 'base/global';
+@import 'layout/home/footer';
+@import 'layout/home/header';
+@import 'layout/home/post';
+@import 'layout/home/stories';
+// Components
+@import 'components/roundImg';
+@import 'components/arrowBtn';
+@import 'components/modal';
+@import 'components/addMultiImages';
+@import 'components/postOptionsModal';
+@import 'components/actionBtn';
+
+body{
+    height:100%;
+    display: flex;
+    flex-direction: column;
+}
+
+body main {
+    max-width: 935px;
+    flex-grow:1;
+    width:100%;
+}
+
+a{
+    text-decoration:none;
+}
+.max-width{
+    max-width: 975px;
+}
+main{
+    max-width:614px;
+    margin: 0 auto;
+}
+
+.bell-container{
+    position:relative;
+    .number-notifications{
+        position:absolute;
+        right:0;
+        top:0;
+        width:17px;
+        height:17px;
+        font-size:11px;
+        background-color:red;
+        color:white;
+        border-radius:50%;
+        z-index:10;
+        transform:translate(35%,-35%);
+        display:flex;
+        align-items:center;
+        justify-content: center;
+    }
+}

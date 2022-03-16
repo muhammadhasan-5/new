@@ -1,0 +1,313 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  background-color: #fafafa;
+}
+
+body.hide-overflow {
+  overflow: hidden;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  list-style: none;
+}
+
+.box {
+  border-radius: 1px;
+  background-color: white;
+  border: 1px solid #dbdbdb;
+}
+
+.hide,
+.modal.hide {
+  display: none;
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+footer {
+  color: #8e8e8e;
+  font-size: 12px;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+footer ul li {
+  margin: 0 8px;
+}
+
+footer .lang-copyright {
+  padding-top: 12px;
+}
+
+footer .lang-copyright .select-lang-container {
+  position: relative;
+}
+
+footer .lang-copyright .select-lang {
+  background-color: #fafafa;
+  border: none;
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+footer .lang-copyright .select-lang__arrow {
+  margin-left: 6px;
+}
+
+.action-btn {
+  color: white;
+  background-color: #0095f6;
+  font-weight: bolder;
+  font-size: 14px;
+  border: 1px solid #dbdbdb;
+  border-radius: 4px;
+  padding: 5px 9px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  margin-top: 100px;
+}
+
+@media screen and (max-width: 365px) {
+  main {
+    margin-top: 0px;
+  }
+}
+
+.main-content {
+  display: flex;
+  margin-bottom: 100px;
+}
+
+.slider-container {
+  position: relative;
+}
+
+.slider-container__images .active {
+  opacity: 1;
+}
+
+.slider-container__images img {
+  opacity: 0;
+  position: absolute;
+  right: 64px;
+  top: 100px;
+  transition: opacity 2s;
+}
+
+.form-container .register .app-name {
+  margin-bottom: 20px;
+}
+
+.form-container .register .register-text {
+  text-align: center;
+  color: #8e8e8e;
+  font-size: 17px;
+}
+
+.form-container .register .action-btn {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.form-container .register .action-btn .fa-facebook-square {
+  font-size: 20px;
+  margin-right: 8px;
+}
+
+.form-container .error-message {
+  color: red;
+  font-size: 14px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.form-container > div {
+  padding: 0 40px;
+}
+
+.form-container .app-name {
+  margin: 22px auto 36px;
+  height: 51px;
+  width: 175px;
+  display: block;
+}
+
+.form-container .login {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+}
+
+.form-container .input-container {
+  position: relative;
+  height: 36px;
+  display: block;
+  margin-bottom: 6px;
+  display: flex;
+}
+
+.form-container .input-container__end {
+  padding-left: 8px;
+  background-color: #fafafa;
+  border: 1px solid #dbdbdb;
+  border-top-right-radius: 1px;
+  border-bottom-right-radius: 1px;
+  border-left: none;
+  font-size: 14px;
+  font-weight: bolder;
+  display: flex;
+  align-items: center;
+}
+
+.form-container .input-container__show {
+  padding-right: 8px;
+  cursor: pointer;
+}
+
+.form-container .input-container .upper-placeholder {
+  padding-left: 8px;
+  padding-top: 4px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 12px;
+  color: #8e8e8e;
+}
+
+.form-container .input-container input {
+  padding: 14px 0 2px 8px;
+  width: 100%;
+  border-radius: 3px;
+  border: 1px solid #dbdbdb;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-right: none;
+}
+
+.form-container .input-container input:focus {
+  outline: none;
+}
+
+.form-container .login-form .submit-btn {
+  background-color: #0095f6;
+  width: 100%;
+  color: white;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  padding: 5px 0;
+  font-weight: bolder;
+  font-size: 14px;
+  margin: 8px 0;
+  cursor: pointer;
+}
+
+.form-container .separator {
+  display: flex;
+  align-items: center;
+  margin: 10px 0 18px;
+}
+
+.form-container .separator .content {
+  margin: 0 18px;
+  color: #8e8e8e;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.form-container .separator .line {
+  height: 1px;
+  flex-grow: 1;
+  background-color: #dbdbdb;
+}
+
+.form-container .login-facebook {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.form-container .login-facebook .facebook-logo {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
+
+.form-container .login-facebook__text {
+  color: #385185;
+  font-size: 14px;
+  font-weight: bolder;
+}
+
+.form-container .forgot-password {
+  text-decoration: none;
+  font-size: 12px;
+  color: #00376b;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.form-container .apps > img {
+  height: 40px;
+  cursor: pointer;
+}
+
+.form-container .apps__text {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 14px;
+}
+
+.form-container .sign-up {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.form-container .sign-up__btn {
+  text-decoration: none;
+  font-weight: bolder;
+  color: #0095f6;
+}
+
+@media screen and (max-width: 875px) {
+  .slider-container {
+    display: none;
+  }
+}
+

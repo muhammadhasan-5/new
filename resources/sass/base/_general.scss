@@ -1,0 +1,33 @@
+*{
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+html{
+    height:100%;
+}
+body{
+    background-color: $primary-bg-color;
+    &.hide-overflow{
+        overflow: hidden;
+    }
+}
+ul{
+    list-style-type:none;
+}
+li{
+    list-style:none;
+}
+
+.box {
+    border-radius: 1px;
+    background-color: white;
+    border: 1px solid #dbdbdb;
+}
+.hide, .modal.hide{
+    display:none;
+}
+.clickable{
+    cursor:pointer;
+}
